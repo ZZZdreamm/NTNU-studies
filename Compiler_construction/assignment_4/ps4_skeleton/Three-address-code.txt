@@ -1,0 +1,34 @@
+Assumptions:
+- print function is an external function that takes any amount of arguments and combines them in given order into one string
+
+extern func print(...)
+
+func main()
+    n = 5
+    l = n + 1
+    a = 0
+    b = 1
+    result = 0
+    i = 1
+    if i < l goto FIBONACCI
+    goto END
+
+  FIBONACCI:
+    result = a + b
+    a = b
+    b = result
+    i = i + 1
+    if i < l goto FIBONACCI
+    goto END
+
+
+  END:
+    param "The "
+    param n
+    param "th number in the sequence is: "
+    param result
+    call print, 4
+    return 0
+
+
+call main, 0

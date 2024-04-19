@@ -1,0 +1,4 @@
+#Thu Feb 08 16:27:38 CET 2024
+base.0=C\:\\Users\\KMult\\OneDrive\\Pulpit\\Norwegia sem 4\\teamwork\\software_architecture\\assignment_2\\pong_singleton\\android\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

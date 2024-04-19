@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.mygdx.game.android-mergeDebugResources-2:/values-v21/values-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\KMult\\OneDrive\\Pulpit\\Norwegia sem 4\\teamwork\\software_architecture\\assignment_2\\pong_singleton\\android\\res\\values-v21\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "231"
+                    }
+                }
+            ]
+        }
+    ]
+}

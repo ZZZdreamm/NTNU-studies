@@ -1,0 +1,55 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.mygdx.game.android-mergeDebugResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\KMult\\OneDrive\\Pulpit\\Norwegia sem 4\\teamwork\\software_architecture\\assignment_2\\pong_singleton\\android\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "228"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "160",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "333"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\KMult\\OneDrive\\Pulpit\\Norwegia sem 4\\teamwork\\software_architecture\\assignment_2\\pong_singleton\\android\\res\\values\\color.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\KMult\\OneDrive\\Pulpit\\Norwegia sem 4\\teamwork\\software_architecture\\assignment_2\\pong_singleton\\android\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "59",
+                        "endColumns": "48",
+                        "endOffsets": "103"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "111",
+                        "endColumns": "48",
+                        "endOffsets": "155"
+                    }
+                }
+            ]
+        }
+    ]
+}

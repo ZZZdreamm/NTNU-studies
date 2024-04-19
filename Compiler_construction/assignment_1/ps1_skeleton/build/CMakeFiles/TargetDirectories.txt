@@ -1,0 +1,3 @@
+/home/zzzdream/compiler/ps1_skeleton/build/CMakeFiles/rebuild_cache.dir
+/home/zzzdream/compiler/ps1_skeleton/build/CMakeFiles/edit_cache.dir
+/home/zzzdream/compiler/ps1_skeleton/build/CMakeFiles/scanner.dir
