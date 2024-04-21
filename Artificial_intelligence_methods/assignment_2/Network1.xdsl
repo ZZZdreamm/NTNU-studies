@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="ContainsPrize">
+			<state id="Door1" />
+			<state id="Door2" />
+			<state id="Door3" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="ContainsPrize1">
+			<state id="Door1" />
+			<state id="Door2" />
+			<state id="Door3" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="MyChoice">
+			<state id="Door1" />
+			<state id="Door2" />
+			<state id="Door3" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="OpenedByOfficial">
+			<state id="Door1" />
+			<state id="Door2" />
+			<state id="Door3" />
+			<parents>MyChoice ContainsPrize1</parents>
+			<probabilities>0 0.5 0.5 0 0 1 0 1 0 0 0 1 0.5 0 0.5 1 0 0 0 1 0 1 0 0 0.5 0.5 0</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.1.3402.0 ACADEMIC" name="Network1">
+			<node id="ContainsPrize">
+				<name>ContainsPrize</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>153 64 336 184</position>
+				<barchart active="true" width="128" height="72" />
+			</node>
+			<node id="ContainsPrize1">
+				<name>ContainsPrize</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>200 88 383 208</position>
+				<barchart active="true" width="223" height="121" />
+			</node>
+			<node id="MyChoice">
+				<name>MyChoice</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>515 106 680 192</position>
+				<barchart active="true" width="213" height="121" />
+			</node>
+			<node id="OpenedByOfficial">
+				<name>OpenedByOfficial</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>355 277 538 397</position>
+				<barchart active="true" width="240" height="129" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

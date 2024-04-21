@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<decision id="Skiing_trip_with_friends_2">
+			<state id="Yes" />
+			<state id="No" />
+		</decision>
+		<cpt id="Amount_of_money_in_savings_">
+			<state id="A_lot" />
+			<state id="Little" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Node2">
+			<state id="A_lot" />
+			<state id="Little" />
+			<parents>Skiing_trip_with_friends_2 Amount_of_money_in_savings_</parents>
+			<probabilities>0.8 0.2 0.2 0.8 0.05 0.95 0 1</probabilities>
+		</cpt>
+		<cpt id="Weater_conditions">
+			<state id="Good" />
+			<state id="Bad" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Quality_of_the_rented_equipment">
+			<state id="Good" />
+			<state id="Bad" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Skiing_skills_2">
+			<state id="Improve" />
+			<state id="Not_improve" />
+			<parents>Skiing_trip_with_friends_2 Weater_conditions Quality_of_the_rented_equipment</parents>
+			<probabilities>0.95 0.05 0.8 0.2 0.7 0.3 0.5 0.5 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Academic_work_">
+			<state id="A_lot" />
+			<state id="Little" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Study_time_2">
+			<state id="Good" />
+			<state id="Bad" />
+			<parents>Skiing_trip_with_friends_2 Academic_work_</parents>
+			<probabilities>0.5 0.5 0.9 0.1 0.9 0.1 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="Group_of_people_joing_the_trip">
+			<state id="Nice" />
+			<state id="Not_nice" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Time_with_friends_2">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Skiing_trip_with_friends_2 Group_of_people_joing_the_trip</parents>
+			<probabilities>1 0 0.8 0.2 0.1 0.9 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Relaxing_holiday_2">
+			<state id="Relaxing" />
+			<state id="Not_relaxing" />
+			<parents>Skiing_trip_with_friends_2 Group_of_people_joing_the_trip Academic_work_ Weater_conditions</parents>
+			<probabilities>0.8 0.2 0.7 0.3 1 0 0.9 0.1 0.5 0.5 0.1 0.9 0.7 0.3 0.6 0.4 0.2 0.8 0.4 0.6 0 1 0.1 0.9 0.9 0.1 1 0 0.4 0.6 0.4 0.6</probabilities>
+		</cpt>
+		<utility id="U">
+			<parents>Node2 Skiing_skills_2 Relaxing_holiday_2 Time_with_friends_2 Study_time_2</parents>
+			<utilities>0.9 0.6 0.8 0.5 0.9 0.7 0.7 0.4 0.6 0.4 0.4 0.2 0.6 0.3 0.2 0 1 0.8 0.8 0.6 0.9 0.7 0.6 0.4 0.85 0.7 0.7 0.5 0.8 0.6 0.6 0.3</utilities>
+		</utility>
+		<decision id="Copy_of_Skiing_trip_with_friends_2">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Skiing_trip_with_friends_2</parents>
+		</decision>
+		<cpt id="Copy_of_Amount_of_money_in_savings_">
+			<state id="A_lot" />
+			<state id="Little" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Copy_of_Node2">
+			<state id="A_lot" />
+			<state id="Little" />
+			<parents>Copy_of_Skiing_trip_with_friends_2 Copy_of_Amount_of_money_in_savings_</parents>
+			<probabilities>0.8 0.2 0.2 0.8 0.05 0.95 0 1</probabilities>
+		</cpt>
+		<cpt id="Copy_of_Weater_conditions">
+			<state id="Good" />
+			<state id="Bad" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Copy_of_Quality_of_the_rented_equipment">
+			<state id="Good" />
+			<state id="Bad" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Copy_of_Skiing_skills_2">
+			<state id="Improve" />
+			<state id="Not_improve" />
+			<parents>Copy_of_Skiing_trip_with_friends_2 Copy_of_Weater_conditions Copy_of_Quality_of_the_rented_equipment</parents>
+			<probabilities>0.95 0.05 0.8 0.2 0.7 0.3 0.5 0.5 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="Copy_of_Academic_work_">
+			<state id="A_lot" />
+			<state id="Little" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Copy_of_Study_time_2">
+			<state id="Good" />
+			<state id="Bad" />
+			<parents>Copy_of_Skiing_trip_with_friends_2 Copy_of_Academic_work_</parents>
+			<probabilities>0.5 0.5 0.9 0.1 0.9 0.1 0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="Copy_of_Group_of_people_joing_the_trip">
+			<state id="Nice" />
+			<state id="Not_nice" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Copy_of_Time_with_friends_2">
+			<state id="Yes" />
+			<state id="No" />
+			<parents>Copy_of_Skiing_trip_with_friends_2 Copy_of_Group_of_people_joing_the_trip</parents>
+			<probabilities>1 0 0.8 0.2 0.1 0.9 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Copy_of_Relaxing_holiday_2">
+			<state id="Relaxing" />
+			<state id="Not_relaxing" />
+			<parents>Copy_of_Skiing_trip_with_friends_2 Copy_of_Group_of_people_joing_the_trip Copy_of_Academic_work_ Copy_of_Weater_conditions</parents>
+			<probabilities>0.8 0.2 0.7 0.3 1 0 0.9 0.1 0.5 0.5 0.1 0.9 0.7 0.3 0.6 0.4 0.2 0.8 0.4 0.6 0 1 0.1 0.9 0.9 0.1 1 0 0.4 0.6 0.4 0.6</probabilities>
+		</cpt>
+		<utility id="Copy_of_U">
+			<parents>Copy_of_Node2 Copy_of_Skiing_skills_2 Copy_of_Relaxing_holiday_2 Copy_of_Time_with_friends_2 Copy_of_Study_time_2</parents>
+			<utilities>0.9 0.6 0.8 0.5 0.9 0.7 0.7 0.4 0.6 0.4 0.4 0.2 0.6 0.3 0.2 0 1 0.8 0.8 0.6 0.9 0.7 0.6 0.4 0.85 0.7 0.7 0.5 0.8 0.6 0.6 0.3</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 4.1.3402.0 ACADEMIC" name="Network1">
+			<node id="Node2">
+				<name>Money spend</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>629 152 726 198</position>
+				<barchart active="true" width="185" height="64" />
+			</node>
+			<node id="Skiing_skills_2">
+				<name>Improvement of skiing skills</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>634 235 727 283</position>
+				<barchart active="true" width="189" height="64" />
+			</node>
+			<node id="Study_time_2">
+				<name>Academic performance</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>633 484 729 533</position>
+				<barchart active="true" width="184" height="64" />
+			</node>
+			<node id="Time_with_friends_2">
+				<name>Meeting new people</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>633 407 725 452</position>
+				<barchart active="true" width="185" height="64" />
+			</node>
+			<node id="Relaxing_holiday_2">
+				<name>Relaxing holiday</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>632 324 724 373</position>
+				<barchart active="true" width="185" height="64" />
+			</node>
+			<node id="U">
+				<name>Utility</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>974 272 1134 304</position>
+				<barchart active="true" width="250" height="99" />
+			</node>
+			<node id="Skiing_trip_with_friends_2">
+				<name>Skiing trip with ESN</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>354 50 457 90</position>
+				<barchart active="true" width="128" height="64" />
+			</node>
+			<node id="Weater_conditions">
+				<name>Weather conditions</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>217 310 330 366</position>
+				<barchart active="true" width="183" height="64" />
+			</node>
+			<node id="Group_of_people_joing_the_trip">
+				<name>Group of people joing the trip</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>215 392 331 450</position>
+				<barchart active="true" width="182" height="64" />
+			</node>
+			<node id="Academic_work_">
+				<name>Amount of academic work</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>218 479 328 535</position>
+				<barchart active="true" width="181" height="64" />
+			</node>
+			<node id="Amount_of_money_in_savings_">
+				<name>Amount of money in savings </name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>216 150 328 204</position>
+				<barchart active="true" width="184" height="64" />
+			</node>
+			<node id="Quality_of_the_rented_equipment">
+				<name>Quality of the rented equipment</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>217 230 327 284</position>
+				<barchart active="true" width="183" height="64" />
+			</node>
+			<node id="Copy_of_Node2">
+				<name>Money spend</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>581 814 678 860</position>
+				<barchart width="185" height="64" />
+			</node>
+			<node id="Copy_of_Skiing_skills_2">
+				<name>Improvement of skiing skills</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>586 897 679 945</position>
+				<barchart width="189" height="64" />
+			</node>
+			<node id="Copy_of_Study_time_2">
+				<name>Academic performance</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>580 1147 676 1196</position>
+				<barchart width="184" height="64" />
+			</node>
+			<node id="Copy_of_Time_with_friends_2">
+				<name>Meeting new people</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>585 1069 677 1114</position>
+				<barchart width="185" height="64" />
+			</node>
+			<node id="Copy_of_Relaxing_holiday_2">
+				<name>Relaxing holiday</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>576 978 668 1027</position>
+				<barchart width="185" height="64" />
+			</node>
+			<node id="Copy_of_U">
+				<name>Utility</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>845 968 1005 1000</position>
+				<barchart width="250" height="99" />
+			</node>
+			<node id="Copy_of_Skiing_trip_with_friends_2">
+				<name>Skiing trip with ESN</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>279 721 382 761</position>
+				<barchart width="128" height="64" />
+			</node>
+			<node id="Copy_of_Weater_conditions">
+				<name>Weather conditions</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>161 964 274 1020</position>
+				<barchart width="183" height="64" />
+			</node>
+			<node id="Copy_of_Group_of_people_joing_the_trip">
+				<name>Group of people joing the trip</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>159 1046 275 1104</position>
+				<barchart width="182" height="64" />
+			</node>
+			<node id="Copy_of_Academic_work_">
+				<name> Amount of academic work</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>165 1142 275 1198</position>
+				<barchart width="181" height="64" />
+			</node>
+			<node id="Copy_of_Amount_of_money_in_savings_">
+				<name>Amount of money in savings </name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>160 804 272 858</position>
+				<barchart width="184" height="64" />
+			</node>
+			<node id="Copy_of_Quality_of_the_rented_equipment">
+				<name>Quality of the rented equipment</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>161 884 271 938</position>
+				<barchart width="183" height="64" />
+			</node>
+		</genie>
+	</extensions>
+</smile>
